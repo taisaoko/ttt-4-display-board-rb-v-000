@@ -154,7 +154,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # Each line that starts with expect represents a row in the ouput.
       # The desired characters a row must include are provided by the String
       # of the row. EX: The top row filled with X would be " X | X | X "
-
+      
       # You would code that expectation with:
       # expect(output).to include(" X | X | X ")
       # meaning you expect the entire output to at least include a matching row.
@@ -165,14 +165,14 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
-      # expect(rows[0]).to eq("   |   |   ")
-      # expect(rows[1]).to eq("-----------")
-      # expect(rows[2]).to eq("   |   |   ")
-      # expect(rows[3]).to eq("-----------")
-      # expect(rows[4]).to eq("   |   |   ")
+      expect(rows[0]).to eq(" X | X | X ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" X | X | X ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" X | X | X ")
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      # expect(true).to be(true)
     end
 
     it 'prints an entire board full of Os' do
